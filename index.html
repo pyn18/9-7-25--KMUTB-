@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thai-Austrian Technical College</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link rel="shortcut icon" href="img/logo.gif" />
+
+    <style>
+        @font-face {
+            font-family: 'FC-Minimal';
+            src: url('font/FC-Minimal/FC Minimal Regular.ttf') format('truetype');
+        }
+
+        body {
+            background: white;
+            font-family: 'FC-Minimal';
+        }
+
+        .tab-desktop {
+            display: block;
+        }
+
+        .accordion-mobile {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .tab-desktop {
+                display: none;
+            }
+
+            .accordion-mobile {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header style="background-color: #5080b0;">
+        <div class="container">
+            <div class="d-flex align-items-center">
+                <img src="img/logo.gif" width="100" class="me-3">
+                <div>
+                    <p class="fs-3 mb-0" style="color: whitesmoke">วิทยาลัยเทคนิคสัตหีบ</p>
+                    <p class="fs-6 mb-0" style="color: whitesmoke;">Thai-Austrian Technical College</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg" data-bs-theme="dark" style="background: #1e1e1e;">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">หน้าแรก</a>
+                    </li>
+                    <li class="nav-item dropdown border-start border-secondary mx-2 ps-3"">
+                        <a class=" nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        เกี่ยวกับวิทยาลัย
+                        </a>
+                        <ul class="dropdown-menu mx-auto" style="min-width: 200px;">
+                            <li><a class="dropdown-item" href="#">ประวัติ</a></li>
+                            <li><a class="dropdown-item" href="#">สัญลักษณ์</a></li>
+                            <li><a class="dropdown-item" href="#">วิสัยทัศน์ / พันธกิจ / สมรรถนะหลัก /
+                                    และค่านิยมร่วม</a></li>
+                            <li><a class="dropdown-item" href="#">โครงสร้างองค์กร</a></li>
+                            <li><a class="dropdown-item" href="#">คณะผู้บริหาร</a></li>
+                            <li><a class="dropdown-item" href="#">นโยบายวิทยาลัย</a></li>
+                            <li><a class="dropdown-item" href="#">รายงานประจำปี</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown border-start border-secondary mx-2 ps-3"">
+                        <a class=" nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        สาขาและหน่วยงาน
+                        </a>
+                        <ul class="dropdown-menu mx-auto" style="min-width: 200px;">
+                            <li><a class="dropdown-item" href="#">ช่างยนต์</a></li>
+                            <li><a class="dropdown-item" href="#">ช่างกลโรงงาน</a></li>
+                            <li><a class="dropdown-item" href="#">ช่างเชื่อมโลหะและตรวจสอบโดยไม่ทำลาย (NTD)</a></li>
+                            <li><a class="dropdown-item" href="#">ช่างไฟฟ้ากำลัง</a></li>
+                            <li><a class="dropdown-item" href="#">ช่างอิเล็กทรอนิกส์</a></li>
+                            <li><a class="dropdown-item" href="#">ช่างก่อสร้าง</a></li>
+                            <li><a class="dropdown-item" href="#">ช่างเขียนแบบเครื่องกล</a></li>
+                            <li><a class="dropdown-item" href="#">เมคคาทรอนิกส์</a></li>
+                            <li><a class="dropdown-item" href="#">เครื่องมือวัดและควบคุม</a></li>
+                            <li><a class="dropdown-item" href="#">เทคนิคพลังงาน</a></li>
+                            <li><a class="dropdown-item" href="#">เทคนคิควบคุมและซ่อมบำรุงขนส่งทางราง</a></li>
+                            <li><a class="dropdown-item" href="#">การบัญชี</a></li>
+                            <li><a class="dropdown-item" href="#">ธุรกิจการบิน</a></li>
+                            <li><a class="dropdown-item" href="#">การจัดการโลจิสติกส์และการจัดการธรุกิจค้าปลีก</a></li>
+                            <li><a class="dropdown-item" href="#">การโรงแรม</a></li>
+                            <li><a class="dropdown-item" href="#">การท่องเที่ยว</a></li>
+                            <li><a class="dropdown-item" href="#">เทคโนโลยีสารสนเทศและเทคโนโลยีสารสนเทศ</a></li>
+                            <li><a class="dropdown-item" href="#">เทคนิคพื้นฐาน</a></li>
+                            <li><a class="dropdown-item" href="#">สามัญสัมพันธ์</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown border-start border-secondary mx-2 ps-3"">
+                        <a class=" nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        รับสมัครนักศึกษา
+                        </a>
+                        <ul class="dropdown-menu mx-auto" style="min-width: 200px;">
+                            <li><a class="dropdown-item" href="#">ปวช.</a></li>
+                            <li><a class="dropdown-item" href="#">ปวส.</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown border-start border-secondary mx-2 ps-3"">
+                        <a class=" nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        วิจัยและบริการวิชาการ
+                        </a>
+                        <ul class="dropdown-menu mx-auto" style="min-width: 200px;">
+                            <li><a class="dropdown-item" href="#">ผลงานวิจัยเด่น</a></li>
+                            <li><a class="dropdown-item" href="#">ฐานข้อมูลนักวิจัย</a></li>
+                            <li><a class="dropdown-item" href="#">วารสารวิชาการ</a></li>
+                            <li><a class="dropdown-item" href="#">งานบริการวิชาการ</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Slide-pic -->
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="750">
+                <img src="img/s1.png" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item" data-bs-interval="1500">
+                <img src="img/s2.png" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item" data-bs-interval="1500">
+                <img src="img/s3.png" class="d-block w-100" alt="..." />
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- nav-tab -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary tab-desktop">
+        <div class="container" style="padding-left:300px;">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
+                            data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane"
+                            aria-selected="true">ข่าววิทยาลัย</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="profile-tab" data-bs-toggle="tab"
+                            data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane"
+                            aria-selected="false">ข่าวทุนวิจัย/อบรม</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="student-tab" data-bs-toggle="tab"
+                            data-bs-target="#student-tab-pane" type="button" role="tab" aria-controls="student-tab-pane"
+                            aria-selected="false">ข่าวนักศึกษา</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="apply-tab" data-bs-toggle="tab" data-bs-target="#apply-tab-pane"
+                            type="button" role="tab" aria-controls="apply-tab-pane"
+                            aria-selected="false">ข่าวรับสมัครนักศึกษา</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="accordion-mobile px-3 mt-3">
+        <div class="accordion" id="accordionTabs">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="College News-tab">
+                    <button class="accordion-button collapsed bg-secondary text-white" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false"
+                        aria-controls="collapseOne">
+                        ข่าววิทยาลัย
+                    </button>
+                </h2>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="College Research & Training News-tab">
+                    <button class="accordion-button collapsed bg-secondary text-white" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false"
+                        aria-controls="collapseOne">
+                        ข่าวทุนวิจัย/อบรม
+                    </button>
+                </h2>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="Student News-tab">
+                    <button class="accordion-button collapsed bg-secondary text-white" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                        aria-controls="collapseTwo">
+                        ข่าวนักศึกษา
+                    </button>
+                </h2>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="Student Admission News-tab">
+                    <button class="accordion-button collapsed bg-secondary text-white" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                        aria-controls="collapseThree">
+                        ข่าวรับสมัครนักศึกษา
+                    </button>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <!-- content -->
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
